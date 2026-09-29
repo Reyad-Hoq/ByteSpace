@@ -1,7 +1,9 @@
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div>
+      <Navbar />
       <h1 className="text-3xl font-bold font-poppins">Welcome to Bytespace!</h1>
       <p className="text-lg font-light font-poppins">
         Discover a world of knowledge with our extensive collection of free courses.
