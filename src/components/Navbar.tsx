@@ -19,7 +19,8 @@ const Navbar = () => {
     </>
   )
   return (
-    <div className="w-full mx-auto flex items-center justify-between py-2 bg-primary text-white">
+    <div className="w-full mx-auto flex items-center justify-between py-2 bg-primary text-white bg-grid-pattern"
+>
        <nav className="sticky top-0 z-40 w-full">
       <header className="mx-auto flex h-20 md:max-w-9/12 items-center justify-between px-6">
         <div className="flex items-center gap-4">
