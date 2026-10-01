@@ -61,6 +61,8 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ---
 
 ## 📁 Project Structure
+
+```text
 bytespace/
 ├── app/
 │   ├── (auth)/
@@ -90,7 +92,7 @@ bytespace/
 │   └── testimonials/
 └── public/
 
-
+```
 ---
 
 ## 🎨 Design Tokens
@@ -102,8 +104,9 @@ colors: {
   secondary: "#D4FB20",  // Lemon Green
 }
 ```
-## 🖋 Fonts
+## 🖋 
 
+```fonts
 | Font | Usage | Source |
 |---|---|---|
 | **Clash Display** | Hero headings, section titles | [Fontshare](https://www.fontshare.com/fonts/clash-display) |
@@ -115,6 +118,7 @@ Poppins is loaded via Google Fonts in `layout.tsx`.
 
 > Download Clash Display and Satoshi from [Fontshare](https://www.fontshare.com)  
 > and place the files in `public/fonts/` before running the project.
+```
 ---
 
 ## 📦 Dependencies
