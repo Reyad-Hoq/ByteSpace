@@ -21,7 +21,7 @@ const CreatorBanner = () => {
         alt=""
         width={110}
         height={110}
-        className="absolute bottom-0 left-6 z-10 w-[80px] md:w-60"
+        className="absolute bottom-0 left-6 z-10 w-[100px] md:w-60"
       />
 
       {/* ── Lemon Zigzag — left center ── */}
@@ -30,7 +30,7 @@ const CreatorBanner = () => {
         alt=""
         width={60}
         height={80}
-        className="absolute left-16 top-0 z-10 w-[40px] md:left-0 md:w-60"
+        className="absolute top-0 z-10 w-[90px] left-0 md:w-60"
       />
 
       {/* ── Lemon Tube / blob — top left ── */}
@@ -39,7 +39,7 @@ const CreatorBanner = () => {
         alt=""
         width={120}
         height={80}
-        className="absolute right-40 top-2 z-10 w-[90px] md:w-38"
+        className="absolute right-15 md:right-40 top-2 z-10 w-[40px] md:w-38"
       />
 
       {/* ── White Zigzag — left, mid-bottom ── */}
@@ -48,7 +48,7 @@ const CreatorBanner = () => {
         alt=""
         width={55}
         height={75}
-        className="absolute top-6 left-35 z-10 w-[38px] md:left-48 md:w-40"
+        className="absolute top-2 md:top-6 left-15 z-10 w-[40px] md:left-48 md:w-40"
       />
 
       {/* White Triangle — top right */}
@@ -57,7 +57,7 @@ const CreatorBanner = () => {
         alt=""
         width={80}
         height={100}
-        className="absolute left-0 bottom-15 z-10 w-[50px] md:right-48 md:w-25"
+        className="absolute left-0 bottom-15 z-10 w-[40px] md:right-48 md:w-25"
       />
 
       {/* White Cylinder — right edge */}
@@ -66,16 +66,16 @@ const CreatorBanner = () => {
         alt="whitecylinder"
         width={70}
         height={110}
-        className="absolute right-0 top-4 z-10 w-[50px] md:w-50"
+        className="absolute right-0 top-1 z-10 w-[60px] md:w-50"
       />
 
       {/* ── Lemon Zigzag — bottom right ── */}
       <Image
         src={LemonZigzag2}
-        alt=""
+        alt="lemonzigzag-2"
         width={60}
         height={80}
-        className="absolute bottom-0 right-8 z-10 w-[40px] md:right-16 md:w-70"
+        className="absolute bottom-0 right-2 z-10 w-[80px] md:right-16 md:w-70"
       />
 
       {/* ── Content ── */}

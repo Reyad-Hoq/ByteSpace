@@ -87,7 +87,7 @@ const AboutSection = () => {
               alt=""
               width={80}
               height={100}
-              className="absolute right-0 top-0 z-0 w-16 md:w-40"
+              className="absolute right-1 -top-7 md:right-0 md:top-0 z-0 w-18 md:w-40"
             />
 
             {/* Course card — top left */}
@@ -130,7 +130,7 @@ const AboutSection = () => {
             </div>
 
             {/* Learning Progress card — right */}
-            <div className="absolute bottom-16 right-0 z-20 w-[160px] rounded-2xl bg-white p-4 shadow-lg">
+            <div className="absolute bottom-16 -right-12 md:right-0 z-20 w-30 md:w-40 rounded-2xl bg-white p-4 shadow-lg">
               <p className="font-satoshi text-xs text-gray-400">
                 Learning Progress
               </p>
@@ -191,7 +191,7 @@ const AboutSection = () => {
             </div>
 
             {/* Happy Students card */}
-            <div className="absolute bottom-4 left-80 z-120 w-[200px] rounded-2xl bg-white p-3 shadow-lg">
+            <div className="absolute -bottom-15 md:bottom-4 md:left-80 z-120 w-50 rounded-2xl bg-white p-3 shadow-lg">
               <p className="font-poppins text-sm font-semibold text-gray-900">
                 Happy Students
               </p>

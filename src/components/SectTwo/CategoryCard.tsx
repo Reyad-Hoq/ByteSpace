@@ -41,7 +41,7 @@ const CategoryCards = () => {
             </div>
 
             {/* Label */}
-            <span className="font-satoshi text-[16px] font-medium text-gray-800 whitespace-nowrap">
+            <span className="font-satoshi text-xs md:text-[16px] font-medium text-gray-800 whitespace-nowrap">
               {cat.label}
             </span>
           </button>

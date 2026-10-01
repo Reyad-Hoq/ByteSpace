@@ -8,7 +8,7 @@ const Navbar = () => {
   const links = (
     <>
     <li>
-      <Link className="text-white hover:text-secondary/90 hover:underline decoration-secondary/80" href="#">Home</Link>
+      <Link className="text-white hover:text-secondary/90 hover:underline decoration-secondary/80" href="/">Home</Link>
     </li>
     <li>
       <Link className="text-white hover:text-secondary/90 hover:underline decoration-secondary/90" href="#">Courses</Link>
@@ -71,8 +71,8 @@ const Navbar = () => {
          {links}
         </ul>
         <div className="hidden text-[16px] font-satoshi items-center  gap-6 md:flex">
-          <Link className="text-white hover:text-secondary/90 no-underline" href="#">Sign In</Link>
-          <Link className="text-white hover:text-secondary/90 no-underline" href="#">Join Us</Link>
+          <Link className="text-white hover:text-secondary/90 no-underline" href="/signin">Sign In</Link>
+          <Link className="text-white hover:text-secondary/90 no-underline" href="/register">Join Us</Link>
           <Link className="text-white hover:text-secondary/90 no-underline" href="#"> <ShoppingBag className="w-5 h-5" /> </Link>
         </div>
       </header>
