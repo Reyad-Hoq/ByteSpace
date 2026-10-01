@@ -8,6 +8,7 @@ import Ring from "../assets/ring-white.svg";
 import ZigzagWhiteOne from "../assets/zigzag-white.svg";
 import ZigzagWhiteTwo from "../assets/zigzag-white-2.svg";
 import Triangle from "../assets/triangle-white.svg";
+import { HappyStudentsCard } from "./HappyStudentsCard";
 
 const HeroSect = () => {
   return (
@@ -162,34 +163,51 @@ const HeroSect = () => {
         className="
       absolute
       z-150
-      left-155
-      bottom-72 
+      w-20
+      p-3
+      left-55
+      bottom-20
+      md:left-155
+      md:bottom-72 
       bg-white 
       text-lg  
       text-gray-500 
-      py-4 px-3 
+      md:py-4 md:px-3 
       rounded-2xl
       text-left"
       >
-        <h1 className="font-bold text-lg text-black/90">UI/UX Design</h1>
-        <p className="text-sm font-semibold">200 Courses . 1000+ Students </p>
+        <h1 className="font-bold text-[12px] md:text-lg text-black/90">UI/UX Design</h1>
+        <p className=" text-[10px] md:text-sm font-semibold">200 Courses . 1000+ Students </p>
       </div>
       <div
         className="
-      absolute
-      z-150
-      right-150
-      bottom-72 
-      bg-white 
-      text-lg  
-      text-black/90 
-      py-4 px-3 
-      rounded-2xl
-      text-left"
-      >
-        <p className="text-sm font-semibold">Learning Progress</p>
-        <h1 className="font-bold text-lg text-black/90">UI/UX Design</h1>
+        absolute
+        z-150
+        w-20
+        p-3
+        bottom-18
+        left-12
+        lg:right-160
+        lg:bottom-65
+        md:w-50
+        rounded-2xl
+        bg-white
+        md:p-5
+        md:text-left
+        text-black/90
+      ">
+        <p className="text-[10px] md:text-sm font-semibold">Learning Progress</p>
+
+        <h1 className="text-sm md:text-5xl font-bold text-black/90">55%</h1>
+
+        <div className="mt-4 h-2 w-full overflow-hidden rounded-full bg-gray-100">
+          <div
+            className="h-full rounded-full bg-secondary"
+            style={{ width: "55%" }}
+          />
+        </div>
       </div>
+      <HappyStudentsCard />
     </section>
   );
 };
