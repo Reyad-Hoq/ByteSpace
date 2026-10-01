@@ -1,3 +1,4 @@
+import CategoryCards from "./SectTwo/CategoryCard";
 import Course from "./SectTwo/Course";
 import Tags from "./SectTwo/Tags";
 const SectTwo = () => {
@@ -16,6 +17,15 @@ const SectTwo = () => {
       </div>
       <Tags />
       <Course/>
+      <div className="w-full lg:w-4xl mx-auto text-center space-y-5">
+        <h2 className="font-bold text-3xl md:text-4xl font-poppins">
+         Explore Diverse Learning Paths at Bytespace
+        </h2>
+        <p className="text-lg text-[#82868E]">
+          At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there&lsquo;s something for everyone. Unleash your potential and explore our carefully curated categories.
+        </p>
+      </div>
+      <CategoryCards/>
     </section>
   );
 };
