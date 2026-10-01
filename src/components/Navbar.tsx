@@ -81,10 +81,10 @@ const Navbar = () => {
           <ul className="flex flex-col gap-2 p-4">
             {links}
             <li className="mt-4 flex flex-col gap-2 border-t border-separator pt-4">
-              <Link href="#" className="block py-2 text-secondary">
+              <Link href="/signin" className="block py-2 text-secondary">
                 Sign In
               </Link>
-              <Link className="block py-2 text-secondary">Join Us</Link>
+              <Link href="/register" className="block py-2 text-secondary">Join Us</Link>
             </li>
           </ul>
         </div>
