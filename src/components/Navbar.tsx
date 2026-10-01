@@ -1,6 +1,6 @@
 'use client';
 import { useState } from "react";
-import { Link, Button } from "@heroui/react";
+import { Link} from "@heroui/react";
 import {ShoppingBag} from '@gravity-ui/icons';
 import Image from "next/image";
 const Navbar = () => {

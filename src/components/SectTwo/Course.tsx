@@ -120,7 +120,7 @@ const courses: Course[] = [
 
 const Course = () => {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-10">
+    <section className="mx-auto w-full px-4 py-10">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {courses.map((course) => (
           <div
@@ -163,7 +163,7 @@ const Course = () => {
             <div className="flex flex-col gap-3 p-4">
               {/* Title + Rating */}
               <div className="flex items-start justify-between gap-2">
-                <h3 className="line-clamp-2 font-poppins text-sm font-semibold leading-snug text-gray-900">
+                <h3 className="line-clamp-2 font-poppins text-lg font-semibold leading-snug text-gray-900">
                   {course.title}
                 </h3>
                 <div className="flex shrink-0 items-center gap-0.5">
@@ -182,7 +182,7 @@ const Course = () => {
               {/* Level + Avatars */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
-                  <ChartColumn size={14} className="text-gray-400" />
+                  <ChartColumn className="text-gray-400" />
                   <span className="font-satoshi text-xs text-gray-500">
                     {course.level}
                   </span>
