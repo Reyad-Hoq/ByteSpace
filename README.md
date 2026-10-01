@@ -63,32 +63,31 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ## 📁 Project Structure
 bytespace/
 ├── app/
-│ ├── layout.tsx
-│ ├── page.tsx
-│ └── (auth)/
-│       ├── register/
-│       └── signin/
+│   ├── (auth)/
+│   │   ├── register/
+│   │   └── signin/
+│   ├── layout.tsx
+│   └── page.tsx
 ├── components/
-│ └── SectTwo/
-│ │     ├── CategoryCards.tsx
-│ │     ├── Course.tsx
-│ │     └── Tags.tsx
-│ │      
-│ ├── AboutSect.tsx
-│ ├── CreatorSect.tsx
-│ ├── Footer.tsx
-│ ├── HappyStudentsCard.tsx
-│ ├── HeroSect.tsx
-│ ├── Navbar.tsx
-│ ├── SearchField.tsx
-│ ├── SectOne.tsx
-│ ├── SectTwo.tsx
-│ └── TestimonialsSect.tsx
+│   ├── SectTwo/
+│   │   ├── CategoryCards.tsx
+│   │   ├── Course.tsx
+│   │   └── Tags.tsx
+│   ├── AboutSect.tsx
+│   ├── CreatorSect.tsx
+│   ├── Footer.tsx
+│   ├── HappyStudentsCard.tsx
+│   ├── HeroSect.tsx
+│   ├── Navbar.tsx
+│   ├── SearchField.tsx
+│   ├── SectOne.tsx
+│   ├── SectTwo.tsx
+│   └── TestimonialsSect.tsx
 ├── assets/
-│ ├── courses/
-│ ├── shapes/
-│ ├── students/
-│ └── testimonials/
+│   ├── courses/
+│   ├── shapes/
+│   ├── students/
+│   └── testimonials/
 └── public/
 
 
