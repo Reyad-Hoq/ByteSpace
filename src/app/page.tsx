@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSect";
+import CreatorBanner from "@/components/CreatorSect";
 import Footer from "@/components/Footer";
 import HeroSect from "@/components/HeroSect";
 import Navbar from "@/components/Navbar";
@@ -12,6 +13,7 @@ export default function Home() {
       <SectOne/>
       <SectTwo/>
       <AboutSection/>
+      <CreatorBanner/>
       <Footer/>
     </div>
   );

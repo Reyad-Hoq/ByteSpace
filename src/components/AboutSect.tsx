@@ -34,14 +34,14 @@ const features = [
 const AboutSection = () => {
   return (
     <section className="w-full overflow-hidden bg-linear-to-br from-secondary/70 via-white to-primary/80 px-4 py-20">
-      <div className="mx-auto max-w-6xl space-y-28">
+      <div className="mx-auto max-w-9/12 space-y-28">
 
         {/* ── Row 1: Text left | Visual right ── */}
         <div className="flex flex-col items-center gap-12 md:flex-row md:gap-8">
 
           {/* Left — text */}
           <div className="flex flex-col gap-6 md:w-1/2">
-            <h2 className="font-poppins text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
+            <h2 className="font-poppins text-4xl font-bold leading-tight text-gray-900 md:text-4xl">
               Your Path to Professional <br />Growth Starts Here!
             </h2>
 
@@ -222,7 +222,7 @@ const AboutSection = () => {
 
           {/* Right — text */}
           <div className="flex flex-col gap-6 md:w-1/2">
-            <h2 className="font-poppins text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
+            <h2 className="font-poppins text-4xl font-bold leading-tight text-gray-900 md:text-4xl">
               Create & Manage <br />Courses Easily.
             </h2>
 
