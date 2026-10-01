@@ -23,7 +23,7 @@ const SectOne = () => {
   const controls = useAnimationControls();
 
   return (
-    <div className="w-full overflow-hidden bg-[#F5F5F6] py-8">
+    <div className="w-full flex items-center justify-center overflow-hidden bg-[#F5F5F6] md:h-40 py-5">
       <motion.div
         className="flex w-max gap-12"
         animate={controls}
