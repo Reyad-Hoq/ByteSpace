@@ -35,7 +35,7 @@ const Footer = () => {
     <footer className="w-full border-t border-gray-100 font-clash">
 
       {/* Main footer */}
-      <div className="w-9/12 mx-auto px-6 py-12">
+      <div className="w-full md:w-9/12 mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between gap-5">
 
           {/* Left — Logo + Newsletter */}

@@ -18,8 +18,8 @@ const categories = [
 
 const CategoryCards = () => {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-10">
-      <div className="grid grid-cols-3 gap-4 sm:grid-cols-3 md:grid-cols-6">
+    <section className="w-full mx-auto md:max-w-6xl px-4 py-10">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-6">
         {categories.map((cat, i) => (
           <button
             key={i}

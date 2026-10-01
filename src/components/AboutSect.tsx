@@ -34,7 +34,7 @@ const features = [
 const AboutSection = () => {
   return (
     <section className="w-full overflow-hidden bg-linear-to-br from-secondary/70 via-white to-primary/80 px-4 py-20">
-      <div className="mx-auto max-w-9/12 space-y-28">
+      <div className="mx-auto md:max-w-9/12 space-y-28">
 
         {/* ── Row 1: Text left | Visual right ── */}
         <div className="flex flex-col items-center gap-12 md:flex-row md:gap-8">
@@ -130,11 +130,11 @@ const AboutSection = () => {
             </div>
 
             {/* Learning Progress card — right */}
-            <div className="absolute bottom-16 -right-12 md:right-0 z-20 w-30 md:w-40 rounded-2xl bg-white p-4 shadow-lg">
+            <div className="absolute bottom-16 -right-5 md:right-0 z-20 w-30 md:w-40 rounded-2xl bg-white p-4 shadow-lg">
               <p className="font-satoshi text-xs text-gray-400">
                 Learning Progress
               </p>
-              <p className="font-poppins text-4xl font-bold text-gray-900">55%</p>
+              <p className="font-poppins text-xl md:text-4xl font-bold text-gray-900">55%</p>
               <div className="mt-2 h-1.5 w-full rounded-full bg-gray-100">
                 <div className="h-1.5 w-[55%] rounded-full bg-secondary" />
               </div>

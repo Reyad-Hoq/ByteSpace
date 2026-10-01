@@ -38,7 +38,7 @@ const Testimonials = () => {
           "radial-gradient(ellipse at top, rgba(204,255,0,0.60) 0%, rgba(255,255,255,0.9) 55%, rgba(0,59,226,0.4) 100%)",
       }}
     >
-      <div className="mx-auto max-w-9/12 space-y-14">
+      <div className="w-full mx-auto md:max-w-9/12 space-y-14">
 
         {/* ── Top: Heading left | Description right ── */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16">
