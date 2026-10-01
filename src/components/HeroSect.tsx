@@ -165,14 +165,19 @@ const HeroSect = () => {
       z-150
       w-20
       p-3
-      left-55
-      bottom-20
-      md:left-155
-      md:bottom-72 
+      left-10
+      bottom-15
+      md:left-50
+      lg:left-155
+      md:bottom-40
+      lg:bottom-72 
       bg-white 
       text-lg  
-      text-gray-500 
-      md:py-4 md:px-3 
+      text-gray-500
+      md:w-40 
+      lg:w-60
+      md:py-4 
+      md:px-3 
       rounded-2xl
       text-left"
       >
@@ -186,10 +191,13 @@ const HeroSect = () => {
         w-20
         p-3
         bottom-18
-        left-12
+        right-10
+        md:right-40
         lg:right-160
+        md:bottom-35
         lg:bottom-65
-        md:w-50
+        md:w-40
+        lg:w-50
         rounded-2xl
         bg-white
         md:p-5

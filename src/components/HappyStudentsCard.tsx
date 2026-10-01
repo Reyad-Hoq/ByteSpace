@@ -26,8 +26,10 @@ export function HappyStudentsCard() {
       md:w-70
       absolute
       z-150
-      md:left-130
-      md:bottom-5
+      md:left-35
+      lg:left-130
+      md:bottom-1
+      lg:bottom-5
       rounded-2xl
       text-left
     text-black/90
