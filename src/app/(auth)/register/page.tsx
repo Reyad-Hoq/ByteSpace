@@ -11,7 +11,7 @@ import av6 from "@/assets/students/s6.png";
 import LemonRing from "@/assets/ring-lemon.svg";
 import LemonTriangle from "@/assets/shapes/lemon-tube.svg";
 import ZigzagWhite from "@/assets/zigzag-white.svg";
-import { HappyStudentsCard } from "@/components/HappyStudentsCard";
+
 
 const avatars = [av1, av2, av3, av4, av5, av6];
 
@@ -45,7 +45,7 @@ const RegisterPage = () => {
           {/* ── Floating course cards visual ── */}
           <div className="relative h-80 w-full">
             {/* Card 1 — back */}
-            <div className="absolute left-1 top-20 z-10 w-80 overflow-hidden rounded-2xl p-3 bg-white shadow-xl">
+            <div className="absolute left-1 top-20 z-10 w-50 md:w-80 overflow-hidden rounded-2xl p-3 bg-white shadow-xl">
               <div className="relative h-35 w-full">
                 <Image
                   src={course1}
@@ -108,7 +108,7 @@ const RegisterPage = () => {
             </div>
 
             {/* Card 2 — front */}
-            <div className="absolute left-22 top-0 z-20 w-80 overflow-hidden rounded-2xl p-3 bg-white shadow-xl">
+            <div className="absolute left-22 top-0 z-20 w-60 md:w-80 overflow-hidden rounded-2xl p-3 bg-white shadow-xl">
               <div className="relative h-35 w-full">
                 <Image src={course2} alt="course" fill className="object-fit rounded-lg" />
                 <div className="absolute bottom-2 left-2 space-x-3">
@@ -202,7 +202,7 @@ const RegisterPage = () => {
               alt=""
               width={50}
               height={50}
-              className="absolute -bottom-33 left-3 z-100 w-32"
+              className="absolute -bottom-33 left-3 md:z-100 w-32"
             />
 
             {/* white zigzag shape */}
@@ -283,7 +283,7 @@ const RegisterPage = () => {
             <button
               type="submit"
               className="
-                mt-2 ml-auto w-30 rounded-full bg-secondary
+                mt-2 ml-auto w-full md:w-30 rounded-full bg-secondary
                 py-3 font-poppins text-sm font-semibold text-black
                 transition-all duration-200 hover:bg-secondary/80
               "
