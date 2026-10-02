@@ -1,8 +1,7 @@
-
 import Image from "next/image";
 import Link from "next/link";
-import course1 from "@/assets/courses/course4.jpg";
-import course2 from "@/assets/courses/course5.jpg";
+import course1 from "@/assets/courses/course2.jpg";
+import course2 from "@/assets/courses/course3.jpg";
 import av1 from "@/assets/students/s1.png";
 import av2 from "@/assets/students/s2.png";
 import av3 from "@/assets/students/s3.png";
@@ -11,20 +10,20 @@ import av5 from "@/assets/students/s5.png";
 import av6 from "@/assets/students/s6.png";
 import LemonRing from "@/assets/ring-lemon.svg";
 import LemonTriangle from "@/assets/shapes/lemon-tube.svg";
-import ZigzagWhite from "@/assets/zigzag-white.svg"
+import ZigzagWhite from "@/assets/zigzag-white.svg";
 import { HappyStudentsCard } from "@/components/HappyStudentsCard";
 
-const avatars = [av1, av2, av3, av4];
+const avatars = [av1, av2, av3, av4, av5, av6];
 
 const RegisterPage = () => {
   return (
-    <main
-      className="flex min-h-screen w-full items-center justify-center overflow-hidden bg-primary bg-grid-pattern px-4 py-12"
-    >
+    <main className="flex min-h-screen w-full items-center justify-center overflow-hidden bg-primary bg-grid-pattern px-4 py-10">
+
       <div className="mx-auto grid w-full max-w-5xl grid-cols-1 items-center gap-10 md:grid-cols-2">
 
         {/* ── Left: Info + Visual ── */}
-        <div className="relative flex flex-col gap-6 text-white">
+        <div className="relative flex flex-col gap-6 text-white mb-35
+        ">
 
           {/* Logo */}
           <div className="flex items-center gap-2">
@@ -44,16 +43,15 @@ const RegisterPage = () => {
           </div>
 
           {/* ── Floating course cards visual ── */}
-          <div className="relative h-[320px] w-full">
-
+          <div className="relative h-80 w-full">
             {/* Card 1 — back */}
-            <div className="absolute left-8 top-0 z-10 w-[200px] rotate-[-4deg] overflow-hidden rounded-2xl bg-white shadow-xl">
-              <div className="relative h-28 w-full">
+            <div className="absolute left-1 top-20 z-10 w-80 overflow-hidden rounded-2xl p-3 bg-white shadow-xl">
+              <div className="relative h-35 w-full">
                 <Image
                   src={course1}
                   alt="course"
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-lg"
                 />
                 <div className="absolute bottom-2 left-2 flex gap-1">
                   <span className="rounded-full bg-black/50 px-2 py-0.5 text-[9px] text-white backdrop-blur-sm">
@@ -66,7 +64,7 @@ const RegisterPage = () => {
               </div>
               <div className="p-3">
                 <p className="font-poppins text-xs font-semibold text-gray-900">
-                  the Power of Big Data
+                  Build Digi...
                 </p>
                 <p className="font-satoshi text-[10px] text-gray-400">
                   by punspearl studio
@@ -76,7 +74,9 @@ const RegisterPage = () => {
                     Beginner
                   </span>
                   <div className="flex items-center gap-0.5">
-                    <span className="font-satoshi text-[10px] text-gray-600">4.5</span>
+                    <span className="font-satoshi text-[10px] text-gray-600">
+                      4.5
+                    </span>
                     <span className="text-[10px] text-yellow-400">★</span>
                   </div>
                 </div>
@@ -92,54 +92,83 @@ const RegisterPage = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="ml-1 flex h-5 w-5 items-center justify-center rounded-full bg-secondary">
-                    <span className="font-poppins text-[8px] font-bold text-black">26+</span>
+                  <div className="ml-1 flex h-5 w-5 items-center justify-center rounded-full bg-black">
+                    <span className="font-poppins text-[8px] font-bold text-white">
+                      26+
+                    </span>
                   </div>
                 </div>
                 <p className="font-poppins mt-1.5 text-sm font-bold text-primary">
-                  $25<span className="font-satoshi text-[9px] font-normal text-gray-400">/lifetime</span>
+                  $25
+                  <span className="font-satoshi text-[9px] font-normal text-gray-400">
+                    /lifetime
+                  </span>
                 </p>
               </div>
             </div>
 
             {/* Card 2 — front */}
-            <div className="absolute left-0 top-16 z-20 w-[190px] rotate-[2deg] overflow-hidden rounded-2xl bg-white shadow-xl">
-              <div className="relative h-24 w-full">
-                <Image
-                  src={course2}
-                  alt="course"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute bottom-2 left-2">
-                  <span className="rounded-full bg-black/50 px-2 py-0.5 text-[9px] text-white backdrop-blur-sm">
+            <div className="absolute left-22 top-0 z-20 w-80 overflow-hidden rounded-2xl p-3 bg-white shadow-xl">
+              <div className="relative h-35 w-full">
+                <Image src={course2} alt="course" fill className="object-fit rounded-lg" />
+                <div className="absolute bottom-2 left-2 space-x-3">
+                  <span className="rounded-full bg-white/50 px-2.5 py-1.5 text-[9px] text-white backdrop-blur-sm">
                     17 Lessons
+                  </span>
+                  <span className="rounded-full bg-white/50 px-2.5 py-1.5 text-[9px] text-white backdrop-blur-sm">
+                    2 hrs 16 m
+                  </span>
+                  <span className="rounded-full bg-white/50 px-2.5 py-1.5 text-[9px] text-white backdrop-blur-sm">
+                    59 Connectivity
                   </span>
                 </div>
               </div>
               <div className="p-3">
                 <p className="font-poppins text-xs font-semibold text-gray-900">
-                  Build Digi...
+                  the Power of Big Data
                 </p>
                 <p className="font-satoshi text-[10px] text-gray-400">
                   by punspearl studio
                 </p>
-                <span className="font-satoshi text-[10px] text-gray-500">Beginner</span>
+                <span className="font-satoshi text-[10px] text-gray-500">
+                  Beginner
+                </span>
+                <div className="mt-1.5 flex items-center">
+                  <div className="flex -space-x-1.5">
+                    {avatars.map((av, i) => (
+                      <div
+                        key={i}
+                        className="relative h-5 w-5 overflow-hidden rounded-full border border-white"
+                        style={{ zIndex: avatars.length - i }}
+                      >
+                        <Image src={av} alt="" fill className="object-cover" />
+                      </div>
+                    ))}
+                  </div>
+                  <div className="ml-1 flex h-5 w-5 items-center justify-center rounded-full bg-black">
+                    <span className="font-poppins text-[8px] font-bold text-white">
+                      26+
+                    </span>
+                  </div>
+                </div>
                 <p className="font-poppins mt-1 text-sm font-bold text-primary">
-                  $25<span className="font-satoshi text-[9px] font-normal text-gray-400">/lifetime</span>
+                  $25
+                  <span className="font-satoshi text-[9px] font-normal text-gray-400">
+                    /lifetime
+                  </span>
                 </p>
               </div>
             </div>
             {/* Happy Students card */}
-            <div className="absolute bottom-4 left-24 z-30 w-[180px] rounded-2xl bg-secondary px-4 py-3 shadow-xl">
+            <div className="absolute -bottom-25 right-22 z-30 w-55 rounded-2xl bg-secondary px-4 py-3 shadow-xl">
               <p className="font-poppins text-sm font-semibold text-black">
                 Happy Students
               </p>
               <div className="font-satoshi mt-0.5 flex items-center gap-1 text-sm text-black/70">
-                 4.5 (240) <span className="text-primary">★</span>
+                4.5 (240) <span className="text-primary">★</span>
               </div>
               <div className="mt-2 flex items-center">
-                <div className="flex -space-x-2">
+                <div className="flex -space-x-3">
                   {avatars.map((av, i) => (
                     <div
                       key={i}
@@ -151,18 +180,20 @@ const RegisterPage = () => {
                   ))}
                 </div>
                 <div className="ml-1 flex h-7 w-7 items-center justify-center rounded-full bg-black">
-                  <span className="font-poppins text-[10px] font-bold text-white">2K+</span>
+                  <span className="font-poppins text-[10px] font-bold text-white">
+                    2K+
+                  </span>
                 </div>
               </div>
             </div>
 
-            {/* Lemon zigzag shape */}
+            {/* Lemon Ring shape */}
             <Image
               src={LemonRing}
-              alt=""
-              width={55}
-              height={75}
-              className="absolute right-8 top-12 z-10 w-[45px]"
+              alt="lemon-ring-shape"
+              width={200}
+              height={150}
+              className="absolute left-5 top-2 z-100 w-28"
             />
 
             {/* Lemon triangle shape */}
@@ -171,15 +202,22 @@ const RegisterPage = () => {
               alt=""
               width={50}
               height={50}
-              className="absolute bottom-8 right-4 z-10 w-[40px]"
+              className="absolute -bottom-33 left-3 z-100 w-32"
             />
 
+            {/* white zigzag shape */}
+            <Image
+              src={ZigzagWhite}
+              alt=""
+              width={50}
+              height={50}
+              className="absolute -bottom-10 right-12 z-100 w-35"
+            />
           </div>
         </div>
 
         {/* ── Right: Form ── */}
-        <div className="w-full rounded-3xl bg-white p-8 shadow-2xl">
-
+        <div className="w-full  md:w-md rounded-3xl bg-white p-8 space-y-10 shadow-2xl">
           {/* Form header */}
           <p className="font-satoshi text-sm font-medium text-primary">
             Create an Account
@@ -190,7 +228,6 @@ const RegisterPage = () => {
 
           {/* Form */}
           <form className="mt-8 flex flex-col gap-5">
-
             {/* Full Name */}
             <div className="flex flex-col gap-1.5">
               <label className="font-satoshi text-sm text-gray-700">
@@ -246,18 +283,17 @@ const RegisterPage = () => {
             <button
               type="submit"
               className="
-                mt-2 w-full rounded-full bg-secondary
+                mt-2 ml-auto w-30 rounded-full bg-secondary
                 py-3 font-poppins text-sm font-semibold text-black
                 transition-all duration-200 hover:bg-secondary/80
               "
             >
               Continue
             </button>
-
           </form>
 
           {/* Login link */}
-          <p className="font-satoshi mt-6 text-center text-sm text-gray-400">
+          <p className="font-satoshi mt-20 text-center text-sm text-gray-400">
             Already have an account?{" "}
             <Link
               href="/login"
@@ -266,7 +302,6 @@ const RegisterPage = () => {
               Login
             </Link>
           </p>
-
         </div>
       </div>
     </main>
